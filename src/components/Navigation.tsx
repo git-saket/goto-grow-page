@@ -24,9 +24,6 @@ const Navigation = () => {
     label: 'Home',
     id: 'hero'
   }, {
-    label: 'About',
-    id: 'about'
-  }, {
     label: 'Services',
     id: 'services'
   }, {
@@ -36,6 +33,9 @@ const Navigation = () => {
     label: 'Testimonials',
     id: 'testimonials'
   }, {
+    label: 'Our Story',
+    id: 'our-story'
+  }, {
     label: 'Contact',
     id: 'contact'
   }];
@@ -44,15 +44,25 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('hero')}>
-            <img src={logo} alt="Go To Marketers" className="h-10 w-10 mr-3" />
-            <span className="font-heading font-bold text-xl text-foreground">
+            <img 
+              src={logo} 
+              alt="Go To Marketers" 
+              className={`h-10 w-10 mr-3 transition-all duration-300 ${
+                isScrolled ? 'filter-none' : 'filter brightness-0 invert drop-shadow-sm'
+              }`} 
+            />
+            <span className={`font-heading font-bold text-xl transition-colors duration-300 ${
+              isScrolled ? 'text-foreground' : 'text-white drop-shadow-sm'
+            }`}>
               Go To Marketers
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="font-body font-medium text-foreground-light hover:text-primary transition-colors duration-200 mx-[9px]">
+            {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className={`font-body font-medium transition-colors duration-200 mx-[9px] ${
+              isScrolled ? 'text-foreground-light hover:text-primary' : 'text-white/90 hover:text-white drop-shadow-sm'
+            }`}>
                 {item.label}
               </button>)}
           </div>
@@ -67,9 +77,15 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             <div className="w-6 h-6 flex flex-col justify-center space-y-1">
-              <div className={`h-0.5 bg-foreground transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`} />
-              <div className={`h-0.5 bg-foreground transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
-              <div className={`h-0.5 bg-foreground transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`} />
+              <div className={`h-0.5 transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''} ${
+                isScrolled ? 'bg-foreground' : 'bg-white drop-shadow-sm'
+              }`} />
+              <div className={`h-0.5 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''} ${
+                isScrolled ? 'bg-foreground' : 'bg-white drop-shadow-sm'
+              }`} />
+              <div className={`h-0.5 transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''} ${
+                isScrolled ? 'bg-foreground' : 'bg-white drop-shadow-sm'
+              }`} />
             </div>
           </button>
         </div>

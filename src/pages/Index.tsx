@@ -38,9 +38,6 @@ const Index = () => {
       <main>
         <HeroSection />
         <div className="fade-in-up">
-          <AboutSection />
-        </div>
-        <div className="fade-in-up">
           <ServicesSection />
         </div>
         <div className="fade-in-up">
@@ -48,6 +45,9 @@ const Index = () => {
         </div>
         <div className="fade-in-up">
           <TestimonialsSection />
+        </div>
+        <div className="fade-in-up">
+          <AboutSection />
         </div>
         <div className="fade-in-up">
           <ContactSection />
