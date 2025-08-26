@@ -1,6 +1,5 @@
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 bg-background">
+  return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-8">
@@ -27,28 +26,9 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
-            <div className="text-center">
-              <div className="font-heading font-bold text-3xl md:text-4xl text-primary mb-2">50+</div>
-              <div className="font-body text-foreground-light">Brands Grown</div>
-            </div>
-            <div className="text-center">
-              <div className="font-heading font-bold text-3xl md:text-4xl text-primary mb-2">2M+</div>
-              <div className="font-body text-foreground-light">Reach Generated</div>
-            </div>
-            <div className="text-center">
-              <div className="font-heading font-bold text-3xl md:text-4xl text-primary mb-2">300%</div>
-              <div className="font-body text-foreground-light">Avg ROI Increase</div>
-            </div>
-            <div className="text-center">
-              <div className="font-heading font-bold text-3xl md:text-4xl text-primary mb-2">24/7</div>
-              <div className="font-body text-foreground-light">Creative Energy</div>
-            </div>
-          </div>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;

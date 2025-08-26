@@ -1,14 +1,14 @@
 import { Button } from '@/components/ui/button';
 import heroBackground from '@/assets/hero-bg.jpg';
-
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
   const openWhatsApp = () => {
     // Replace with actual WhatsApp number
     const phoneNumber = '1234567890'; // Replace with real number
@@ -16,16 +16,10 @@ const HeroSection = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-
-  return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img 
-          src={heroBackground} 
-          alt="Marketing Agency Background" 
-          className="w-full h-full object-cover"
-        />
+        <img src={heroBackground} alt="Marketing Agency Background" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-br from-foreground/70 via-foreground/60 to-primary/40" />
       </div>
 
@@ -42,20 +36,11 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
-          <Button
-            onClick={() => scrollToSection('contact')}
-            size="lg"
-            className="bg-primary hover:bg-primary-glow text-primary-foreground font-heading font-semibold text-lg px-8 py-4 shadow-button hover:scale-105 transition-all duration-300"
-          >
+          <Button onClick={() => scrollToSection('contact')} size="lg" className="bg-primary hover:bg-primary-glow text-primary-foreground font-heading font-semibold text-lg px-8 py-4 shadow-button hover:scale-105 transition-all duration-300">
             Book a Free Strategy Call
           </Button>
           
-          <Button
-            onClick={openWhatsApp}
-            variant="outline"
-            size="lg"
-            className="border-2 border-white text-white hover:bg-white hover:text-foreground font-heading font-semibold text-lg px-8 py-4 transition-all duration-300 hover:scale-105"
-          >
+          <Button onClick={openWhatsApp} variant="outline" size="lg" className="border-2 border-white hover:bg-white font-heading font-semibold text-lg px-8 py-4 transition-all duration-300 hover:scale-105 text-teal-500">
             Chat with Us on WhatsApp
           </Button>
         </div>
@@ -69,8 +54,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
