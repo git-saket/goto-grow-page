@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/logo.jpg';
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -47,8 +47,8 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="Go To Marketers" 
-              className={`h-10 w-10 mr-3 transition-all duration-300 ${
-                isScrolled ? 'filter-none' : 'filter brightness-0 invert drop-shadow-sm'
+              className={`h-10 w-10 mr-3 ${
+                isScrolled ? 'filter-none' : 'filter '
               }`} 
             />
             <span className={`font-heading font-bold text-xl transition-colors duration-300 ${

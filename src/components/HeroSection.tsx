@@ -36,11 +36,11 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
-          <Button onClick={() => scrollToSection('contact')} size="lg" className="bg-primary hover:bg-primary-glow text-primary-foreground font-heading font-semibold text-lg px-8 py-4 shadow-button hover:scale-105 transition-all duration-300">
+          <Button onClick={() => scrollToSection('contact')} size="lg" className="bg-white border-2 border-white text-black font-heading font-semibold text-lg px-8 py-4 shadow-button hover:scale-105 hover:text-white transition-all duration-300">
             Book a Free Strategy Call
           </Button>
           
-          <Button onClick={openWhatsApp} variant="outline" size="lg" className="border-2 border-white hover:bg-white font-heading font-semibold text-lg px-8 py-4 transition-all duration-300 hover:scale-105 text-teal-500">
+          <Button onClick={openWhatsApp} variant="outline" size="lg" className="border-2 border-white font-heading font-semibold text-lg px-8 py-4 transition-all duration-300 hover:scale-105 ">
             Chat with Us on WhatsApp
           </Button>
         </div>

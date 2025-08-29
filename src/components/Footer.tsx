@@ -1,45 +1,85 @@
-import { Instagram, Linkedin } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import { Instagram, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-foreground text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          {/* Logo and Brand */}
-          <div className="flex items-center mb-6 md:mb-0">
-            <img src={logo} alt="Go To Marketers" className="h-10 w-10 mr-3" />
-            <span className="font-heading font-bold text-xl">
+      <div className="container mx-auto px-6">
+        {/* Footer Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          {/* Column 1 - About */}
+          <div>
+            <h3 className="font-heading font-bold text-lg mb-4">
               Go To Marketers
-            </span>
+            </h3>
+            <p className="text-white/60 text-sm leading-relaxed">
+              Your trusted growth partners for digital marketing success. 
+              We help businesses achieve remarkable growth through 
+              strategic, data-driven campaigns.
+            </p>
           </div>
 
-          {/* Social Links */}
-          <div className="flex items-center space-x-6">
-            <a
-              href="https://instagram.com/gotomarketers"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/10 hover:bg-primary transition-all duration-300 hover:scale-110"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="https://linkedin.com/company/gotomarketers"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/10 hover:bg-primary transition-all duration-300 hover:scale-110"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
+          {/* Column 2 - Services */}
+          <div>
+            <h3 className="font-heading font-bold text-lg mb-4">Our Services</h3>
+            <ul className="space-y-2 text-white/70 text-sm">
+              <li>Social Media Marketing</li>
+              <li>Branding & Creative Design</li>
+              <li>Paid Advertising</li>
+              <li>SEO & Content Marketing</li>
+              <li>Website Development</li>
+              <li>Analytics & Strategy</li>
+            </ul>
+          </div>
+
+          {/* Column 3 - Company */}
+          <div>
+            <h3 className="font-heading font-bold text-lg mb-4">Company</h3>
+            <ul className="space-y-2 text-white/70 text-sm">
+              <li>About Us</li>
+              <li>Success Stories</li>
+              <li>Client Testimonials</li>
+              <li>Marketing Blog</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          {/* Column 4 - Follow Us */}
+          <div>
+            <h3 className="font-heading font-bold text-lg mb-4">Follow Us</h3>
+            <p className="text-white/60 text-sm leading-relaxed mb-4">
+              Connect with us on social media for daily tips, insights, 
+              and behind-the-scenes looks at our work.
+            </p>
+            <div className="flex space-x-4">
+              <a
+                href="https://linkedin.com/company/gotomarketers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-white/10 hover:bg-primary transition-all duration-300 hover:scale-110"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://instagram.com/gotomarketers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-white/10 hover:bg-primary transition-all duration-300 hover:scale-110"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p className="font-body text-white/60">
-            © {currentYear} Go To Marketers. All rights reserved. Built with ❤️ for growth.
+        {/* Bottom Bar */}
+        <div className="border-t border-white/20 mt-10 pt-6 text-center">
+          <p className="font-body text-white/60 text-sm">
+            © {currentYear} Go To Marketers. All rights reserved. |{" "}
+            <a href="#" className="hover:text-white transition">Privacy Policy</a> |{" "}
+            <a href="#" className="hover:text-white transition">Terms of Service</a>
           </p>
         </div>
       </div>
