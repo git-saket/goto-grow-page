@@ -98,7 +98,7 @@ const ContactSection = () => {
                           href="mailto:hello@gotomarketers.com"
                           className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-base break-all"
                         >
-                          hello@gotomarketers.com
+                          info@gotomarketers.in
                         </a>
                       </div>
                     </div>
@@ -111,7 +111,7 @@ const ContactSection = () => {
                           href="tel:+15551234567"
                           className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-base"
                         >
-                          +1 (555) 123-4567
+                          +91 9993919953
                         </a>
                       </div>
                     </div>
@@ -121,7 +121,7 @@ const ContactSection = () => {
                       <div className="flex-1">
                         <p className="font-semibold text-gray-900 dark:text-white text-base mb-1">Business Hours</p>
                         <p className="text-gray-600 dark:text-gray-300 text-base">
-                          Mon-Fri: 9:00 AM - 6:00 PM IST
+                          Mon-Fri: 10:00 AM - 6:00 PM IST
                         </p>
                       </div>
                     </div>
@@ -138,7 +138,7 @@ const ContactSection = () => {
                           Response Time
                         </p>
                         <p className="text-blue-700 dark:text-blue-300 text-base">
-                          We typically respond within 2-4 hours during business hours.
+                          We typically respond within 1-2 hours during business hours.
                         </p>
                       </div>
                     </div>
@@ -176,7 +176,7 @@ const ContactSection = () => {
               Ready to Get Started?
             </h3>
             <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto leading-relaxed">
-              Join hundreds of businesses that trust us with their digital marketing needs.
+              Join us and let's make something amazing together
             </p>
             <Button
               onClick={openWhatsApp}

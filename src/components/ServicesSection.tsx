@@ -1,5 +1,5 @@
 import { Card } from '@/components/ui/card';
-import { Megaphone, Target, Palette, PenTool } from 'lucide-react';
+import { Megaphone, Workflow, ChartPie, Lightbulb } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
@@ -9,19 +9,19 @@ const ServicesSection = () => {
       description: 'Build your brand presence across all social platforms with engaging content and strategic campaigns.',
     },
     {
-      icon: Target,
-      title: 'Performance Ads',
-      description: 'Data-driven advertising campaigns that deliver measurable results and maximize your ROI.',
+      icon: Workflow,
+      title: 'Automation',
+      description: 'AI agents that work like a team for you saving time and automating tasks.',
     },
     {
-      icon: Palette,
-      title: 'Branding & Design',
-      description: 'Create a bold visual identity that stands out and resonates with your target audience.',
+      icon: ChartPie,
+      title: 'Analytics',
+      description: ' Analyze crucial data -finance, dashboards, MIS, and every number that matters to deliver clear insights.',
     },
     {
-      icon: PenTool,
-      title: 'Content Creation',
-      description: 'High-quality content that tells your story and drives engagement across all channels.',
+      icon: Lightbulb,
+      title: 'Consulting',
+      description: 'We solve problems and guide you in every part of business. Wherever you’re stuck, we’re there to help.',
     },
   ];
 

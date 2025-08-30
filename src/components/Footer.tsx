@@ -15,9 +15,9 @@ const Footer = () => {
               Go To Marketers
             </h3>
             <p className="text-white/60 text-sm leading-relaxed">
-              Your trusted growth partners for digital marketing success. 
-              We help businesses achieve remarkable growth through 
-              strategic, data-driven campaigns.
+              We’re not an agency—we’re your extended growth team. 
+              From marketing to automation, we partner with you to 
+              drive impact and scale your startup across every domain.
             </p>
           </div>
 
@@ -26,11 +26,9 @@ const Footer = () => {
             <h3 className="font-heading font-bold text-lg mb-4">Our Services</h3>
             <ul className="space-y-2 text-white/70 text-sm">
               <li>Social Media Marketing</li>
-              <li>Branding & Creative Design</li>
-              <li>Paid Advertising</li>
-              <li>SEO & Content Marketing</li>
-              <li>Website Development</li>
-              <li>Analytics & Strategy</li>
+              <li>Automation</li>
+              <li>Analytics</li>
+              <li>Strategy</li>
             </ul>
           </div>
 
@@ -41,7 +39,6 @@ const Footer = () => {
               <li>About Us</li>
               <li>Success Stories</li>
               <li>Client Testimonials</li>
-              <li>Marketing Blog</li>
               <li>Contact Us</li>
             </ul>
           </div>
@@ -63,7 +60,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://instagram.com/gotomarketers"
+                href="https://instagram.com/go.to.marketer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white/10 hover:bg-primary transition-all duration-300 hover:scale-110"

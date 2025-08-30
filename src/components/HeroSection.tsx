@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
   const openWhatsApp = () => {
     // Replace with actual WhatsApp number
-    const phoneNumber = '1234567890'; // Replace with real number
+    const phoneNumber = '9993919953'; // Replace with real number
     const message = 'Hi Go To Marketers, I want help with...';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -26,12 +26,12 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <h1 className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl text-white mb-6 animate-fade-in">
-          Don't Just Market,{' '}
-          <span className="text-primary-glow">Grow.</span>
+          Not an Agency. Your{' '}
+          <span className="text-primary-glow">Startup’s Growth Partner.</span>
         </h1>
         
         <p className="font-body text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-in">
-          We help brands grow with fearless creativity and bold strategies.
+          We’re not an agency—we’re your extended growth team. From marketing to automation, we partner with you to drive impact and scale your startup across every domain.
         </p>
 
         {/* CTA Buttons */}

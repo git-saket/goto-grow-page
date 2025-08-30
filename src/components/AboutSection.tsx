@@ -9,15 +9,14 @@ const AboutSection = () => {
           
           <div className="space-y-6 font-body text-lg text-foreground-light leading-relaxed">
             <p>
-              At Go To Marketers, we believe in <strong className="text-foreground">fearless creativity</strong> and 
-              <strong className="text-foreground"> bold strategies</strong> that actually move the needle. 
-              We're not here to play it safe – we're here to help you grow.
+              Every startup needs more than just an agency,
+               they need people who care about their growth like their own.
             </p>
             
             <p>
-              Our young, dynamic team lives and breathes digital marketing. We work with startups who need to make 
-              their mark, small businesses ready to scale, D2C brands looking to dominate their space, and 
-              influencers who want to turn their passion into profit.
+              That’s what Go To Marketers is built for. We plug in as your <strong className="text-foreground"> extended team</strong>, 
+              taking care of <strong className="text-foreground"> content, automation, analytics, and strategy </strong> so you can focus on building the future. 
+              Think of us not as service providers, but as partners who share your vision and work with you to make it real.
             </p>
             
             <p>
