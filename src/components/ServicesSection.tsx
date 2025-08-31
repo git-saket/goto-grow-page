@@ -6,7 +6,7 @@ const ServicesSection = () => {
     {
       icon: Megaphone,
       title: 'Social Media Marketing',
-      description: 'Build your brand presence across all social platforms with engaging content and strategic campaigns.',
+      description: 'From planning to posting, we manage your entire Social Media. Creating content, videos, reels, and posts that people notice.'
     },
     {
       icon: Workflow,
