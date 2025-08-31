@@ -26,8 +26,8 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <h1 className="font-heading font-bold text-3xl md:text-5xl lg:text-6xl text-white mb-6 animate-fade-in">
-          Not an Agency. Your{' '}
-          <span className="text-primary-glow">Startup’s Growth Partner.</span>
+          Grow with {' '}
+          <span className="text-primary-glow">Go To Marketers.</span>
         </h1>
         
         <p className="font-body text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-in">
