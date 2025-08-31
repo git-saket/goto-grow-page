@@ -26,7 +26,8 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <h1 className="font-heading font-bold text-3xl md:text-5xl lg:text-6xl text-white mb-6 animate-fade-in">
-          Grow with {' '}
+          Grow with 
+          {' '}
           <span className="text-primary-glow">Go To Marketers.</span>
         </h1>
         
